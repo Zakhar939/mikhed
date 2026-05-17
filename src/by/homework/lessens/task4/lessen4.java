@@ -1,4 +1,4 @@
-package by.homework.lessons.task4;
+package by.homework.lessens.task4;
 
 import java.util.Scanner;
 
@@ -37,13 +37,18 @@ public class lessen4 {
 
         int result = 15 / x;
 
-        if (result == 3) {
-            System.out.println("Результат деления равен 3");
-        } else if (result == 5) {
-            System.out.println("Результат деления равен 5");
-        } else {
-            System.out.println("Результат деления равен дробному числу");
-            System.out.println((double) 15 / x);
+        switch (result) {
+            case 3:
+                System.out.println("Результат деления равен 3");
+                break;
+            case 5:
+                System.out.println("Результат деления равен 5");
+                break;
+            default:
+                double exactResult = 15.0 / x;
+                System.out.println("Результат деления равен дробному числу");
+                System.out.println("Точный результат: " + exactResult);
+                break;
         }
     }
 }
