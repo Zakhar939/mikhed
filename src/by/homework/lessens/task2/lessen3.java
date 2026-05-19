@@ -29,9 +29,7 @@ public class lessen3 {
 
         int x = 5;
         int y = 2;
-        x++;
-        int c = x * y;
-        --y;
+        int c = ++x * --y;
         System.out.println("x = " + x);
         System.out.println("y = " + y);
         System.out.println("c = " + c);
