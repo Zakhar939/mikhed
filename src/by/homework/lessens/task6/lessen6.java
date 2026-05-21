@@ -52,20 +52,20 @@ public class lessen6 {
 //            System.out.print(value + " ");
 //        }
 
-        int[] massive4 = {10, 3, 7, 1, 9, 4};
-
-        for (int i = 0; i < massive4.length - 1; i++) {
-            for (int j = 0; j < massive4.length - 1 - i; j++) {
-                if (massive4[j] > massive4[j + 1]) {
-                    int temp = massive4[j];
-                    massive4[j] = massive4[j + 1];
-                    massive4[j + 1] = temp;
-                }
-            }
-        }
-
-        for (int i = 0; i < massive4.length; i++) {
-            System.out.print(massive4[i] + " ");
-        }
+//        int[] massive4 = {10, 3, 7, 1, 9, 4};
+//
+//        for (int i = 0; i < massive4.length - 1; i++) {
+//            for (int j = 0; j < massive4.length - 1 - i; j++) {
+//                if (massive4[j] > massive4[j + 1]) {
+//                    int temp = massive4[j];
+//                    massive4[j] = massive4[j + 1];
+//                    massive4[j + 1] = temp;
+//                }
+//            }
+//        }
+//
+//        for (int i = 0; i < massive4.length; i++) {
+//            System.out.print(massive4[i] + " ");
+//        }
     }
 }
