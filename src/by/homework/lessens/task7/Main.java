@@ -31,7 +31,7 @@ public class Main {
         Student student2 = new Student(2, "gfgf", "Тfgf", "ие", 1964, "123", 70);
         Student student3 = new Student(3, "gfgf", "Тfgf", "ие", 1964, "123", 2);
         Student student4 = new Student(4, "gfgf", "Тfgf", "ие", 1964, "123", 252);
-        Student student5 = new Student(5, "gfgf", "Тfgf", "ие", 1964, "123", 52);
+        Student student5 = new Student(6, "gfgf", "Тfgf", "ие", 1964, "123", 52);
 
         students[0] = student1;
         students[1] = student2;
