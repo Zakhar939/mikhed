@@ -37,7 +37,7 @@ public class Student {
     public void changeGroup(String newGroup) {
         this.group = newGroup;
     }
-    public String getGroup() {
+    public String getGroup(int i, String string) {
         return this.group;
     }
     public void ttt(int newAverageGrade, String newGroup) {
@@ -65,5 +65,9 @@ public class Student {
         }
 
         return result;
+    }
+
+    public void averageGrade(int i, String s) {
+
     }
 }
