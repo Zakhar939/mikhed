@@ -2,12 +2,12 @@ package by.homework.lessens.task9;
 
 import java.util.Objects;
 
-public class Dog extends Animal{
+public class Dog extends Animal {
     private String name;
     private String breed;
     private double averageWeight;
 
-    public Dog(String name, String breed, double averageWeight, String color, int maxLifespan, String foodType){
+    public Dog(String name, String breed, double averageWeight, String color, int maxLifespan, String foodType) {
         super(color, maxLifespan, foodType);
         this.name = name;
         this.breed = breed;
@@ -15,13 +15,15 @@ public class Dog extends Animal{
     }
 
     @Override
-    public void makeSound(){
-        System.out.println(name+ " издаёт звук");
+    public void makeSound() {
+        System.out.println(name + " издаёт звук");
     }
+
     @Override
     public void play() {
         System.out.println(name + " играет");
     }
+
     public void bark() {
         System.out.println(name + " гаф");
     }
@@ -59,21 +61,24 @@ public class Dog extends Animal{
                 '}';
     }
 
-    @Override
     public boolean equals(Object obj) {
-        if (this == obj) return true;
+        if (!(obj instanceof Dog)) {
+            return false;
+        }
+        Dog other = (Dog) obj;
 
-
-        if (obj == null || getClass() != obj.getClass()) return false;
-
-        Dog dog = (Dog) obj;
-
-        return Objects.equals(name, dog.name) &&
-                Objects.equals(breed, dog.breed);
+        if ((name == null ? other.name == null : name.equals(other.name))
+                && (breed == null ? other.breed == null : breed.equals(other.breed))) {
+            return true;
+        }
+        return false;
     }
 
-    @Override
     public int hashCode() {
-        return Objects.hash(name, breed);
+        final int prime = 31;
+        int result = 1;
+        result = prime * result + (name == null ? 0 : name.hashCode());
+        result = prime * result + (breed == null ? 0 : breed.hashCode());
+        return result;
     }
 }
