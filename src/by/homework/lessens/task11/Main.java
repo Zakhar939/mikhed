@@ -2,7 +2,7 @@ package by.homework.lessens.task11;
 
 public class Main {
     public static void main(String[] args) {
-        RobotCook robotCook = new RobotCook("samsung", 500.0, "Германия", "электроплитка");
+        RobotCook robotCook = new RobotCook("ios", 500.0, "Германия", "электроплитка");
         RobotSapper robotSapper = new RobotSapper("huawei", 750.0, 5, "алюминий");
         RobotBuilder robotBuilder = new RobotBuilder("lg", 1000.0, "Япония", "бетономешалка", "бетон");
 

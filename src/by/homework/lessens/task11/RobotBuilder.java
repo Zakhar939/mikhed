@@ -37,4 +37,3 @@ public class RobotBuilder implements Robot, RobotEngineer {
         System.out.println("Строитель создаёт бетон");
     }
 }
-

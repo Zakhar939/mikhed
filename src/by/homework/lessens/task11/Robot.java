@@ -11,4 +11,3 @@ public interface Robot {
         System.out.println("Робот отремонтирован");
     }
 }
-
