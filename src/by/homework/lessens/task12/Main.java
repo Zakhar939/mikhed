@@ -33,16 +33,16 @@ public class Main {
 //    System.out.println("Первый мотоцикл: " + motorcycle.getName());
 //}
 
-            Garage<Car> carGarage = new Garage<>();
-            Garage<Motorcycle> motorcycleGarage = new Garage<>();
+        Garage<Car> carGarage = new Garage<>();
+        Garage<Motorcycle> motorcycleGarage = new Garage<>();
 
-            Car car = new Car("Toyota", 150);
-            Motorcycle motorcycle = new Motorcycle("Honda", 80);
+        Car car = new Car("Toyota", 150);
+        Motorcycle motorcycle = new Motorcycle("Honda", 80);
 
-            System.out.println("Транспортное средство: " + car.getName());
-            System.out.println("Въезд разрешён: " + carGarage.isEntryPermitted(car));
+        System.out.println("Транспортное средство: " + car.getName());
+        System.out.println("Въезд разрешён: " + carGarage.isEntryPermitted(car));
 
-            System.out.println("Транспортное средство: " + motorcycle.getName());
-            System.out.println("Въезд разрешён: " + motorcycleGarage.isEntryPermitted(motorcycle));
-        }
+        System.out.println("Транспортное средство: " + motorcycle.getName());
+        System.out.println("Въезд разрешён: " + motorcycleGarage.isEntryPermitted(motorcycle));
     }
+}
