@@ -1,11 +1,11 @@
-package by.homework.lessens.task18;
+package by.homework.lessens.task18.runnable;
 
-public class Auto extends Thread {
+public class AutoRunnable implements Runnable {
     private String name;
     private String plate;
     private long stopMillis;
 
-    public Auto(String name, String plate, long stopMillis) {
+    public AutoRunnable(String name, String plate, long stopMillis) {
         this.name = name;
         this.plate = plate;
         this.stopMillis = stopMillis;
@@ -28,7 +28,7 @@ public class Auto extends Thread {
         System.out.println(name + " остановилась");
     }
 
-    public String getCarName() {
+    public String getNameCar() {
         return name;
     }
 
